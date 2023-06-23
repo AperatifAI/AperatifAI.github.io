@@ -22,8 +22,8 @@ url: "https://aperitif.ai" # the base hostname & protocol for your site, e.g. ht
 twitter_username: AperitifAI
 github_username:  aperitifai
 
-# include:
-#   - _pages
+include:
+  - _pages
 
 # Build settings
 markdown: kramdown
@@ -50,7 +50,7 @@ atom_feed:
 defaults:
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
@@ -58,3 +58,12 @@ defaults:
       copyright-notice: false
       # header:
       #   overlay_color: "#333"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
